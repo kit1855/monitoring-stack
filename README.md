@@ -13,6 +13,7 @@
 | Уведомления | Email (SMTP) |
 
 ## Архитектура
+
 Node Exporter (порт 9100) → Prometheus (порт 9090) → Grafana (порт 3001)
 
 Prometheus (порт 9090) → Alertmanager (порт 9093) → Email
@@ -58,7 +59,6 @@ sudo systemctl status node_exporter prometheus alertmanager
 | ServiceDown | Node Exporter недоступен 1 минуту | Email |
 | TestAlert | Всегда активен (для проверки) | Email |
 
-~
 ## Мониторинг
 
 - **Node Exporter** собирает метрики: CPU, RAM, диск, сеть
